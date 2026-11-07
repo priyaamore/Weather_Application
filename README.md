@@ -1,3 +1,6 @@
+# Weather_Application
+Create first project using React
+
 # India Weather (React + Vite)
 
 Live weather for 190+ Indian cities, plus search for any other place in India.

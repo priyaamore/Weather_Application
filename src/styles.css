@@ -1,0 +1,27 @@
+:root{--sky1:#3d86e0;--sky2:#bfe0fa;--ink:#0f2238;--card:rgba(255,255,255,.6);--line:rgba(15,34,56,.15)}
+@media (prefers-color-scheme:dark){:root{--ink:#f2f6fb;--card:rgba(10,20,36,.5);--line:rgba(255,255,255,.2)}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;color:var(--ink);background:linear-gradient(170deg,var(--sky1),var(--sky2)) fixed;transition:background .6s}
+.wrap{max-width:600px;margin:0 auto;padding:20px 16px 40px}
+input,button{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+input{width:100%}input::placeholder{color:var(--ink);opacity:.6}
+button{cursor:pointer;font-weight:600}
+button:focus-visible,input:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.bar{display:flex;gap:8px}
+.list{margin-top:8px;max-height:220px;overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;backdrop-filter:blur(8px)}
+.item{display:flex;justify-content:space-between;width:100%;border:0;border-radius:0;background:none;border-bottom:1px solid var(--line);text-align:left;font-weight:500}
+.item small{opacity:.7}
+.hero{text-align:center;padding:20px 0 12px}
+.place{font-size:24px;font-weight:600}
+.icon{font-size:72px;line-height:1.1}
+.temp{font-size:100px;font-weight:300;line-height:1;letter-spacing:-4px}
+.cond{font-size:20px;margin:4px 0}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-top:14px;backdrop-filter:blur(8px)}
+.panel h2{font-size:15px;margin:0 0 10px}
+.hours{display:flex;gap:6px;overflow-x:auto}
+.hour{flex:0 0 auto;min-width:58px;text-align:center}.hour .i{font-size:24px;margin:4px 0}
+.row{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}.row span:first-child{width:60px}.row .i{font-size:22px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}.stats b{display:block;font-size:20px}
+.msg{text-align:center;padding:40px 0}
+.note{font-size:12px;opacity:.75;text-align:center;margin-top:18px}
